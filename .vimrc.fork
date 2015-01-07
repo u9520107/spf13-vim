@@ -1,0 +1,46 @@
+" Modeline and Notes {
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=2 foldmethod=marker spell:
+" }
+
+" Vim UI {
+    colorscheme distinguished;
+
+" Formatting {
+
+    set shiftwidth=2                " Use indents of 2 spaces
+    set tabstop=2                   " An indentation every 2 columns
+    set softtabstop=2               " Let backspace delete indent
+" }
+
+
+" Plugins {
+
+
+    " OmniComplete {
+        " To disable omni complete, add the following to your .vimrc.before.local file:
+           ""let g:spf13_no_omni_complete = 1
+    " }
+
+
+    " NerdTree {
+        let NERDTreeShowBookmarks=0
+        let NERDTreeQuitOnOpen=0
+        let NERDTreeShowHidden=1
+        let NERDTreeKeepTreeInNewTab=1
+        let g:nerdtree_tabs_open_on_gui_startup=1
+    " }
+" }
+
+" GUI Settings {
+    " GVIM- (here instead of .gvimrc)
+    if has('gui_running')
+        if !exists("g:spf13_no_big_font")
+            if WINDOWS() && has("gui_running")
+                set guifont=Consolas:h10,Andale_Mono:h10,Menlo:h10,Courier_New:h10
+                let g:NERDTreeDirArrows=1
+                set guioptions=
+            endif
+        endif
+    endif
+" }
+
