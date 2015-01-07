@@ -24,6 +24,14 @@
             let g:indent_guides_enable_on_vim_startup = 0
         endif
     " }
+    " syntastic {
+        "use jsxhint for js checking
+        let g:syntastic_javascript_checkers=['jsxhint']
+        let g:syntastic_check_on_wq=1 "run check when buffer is written to disk
+        let g:syntastic_auto_loc_list=1   "auto open when error exists, close when errors are cleared
+        let g:syntastic_always_populate_loc_list=1
+        let g:syntastic_json_checkers=['jsonlint']
+    " }
 " }
 
 " Colorscheme {
