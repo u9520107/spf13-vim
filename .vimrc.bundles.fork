@@ -24,6 +24,10 @@
     " Editorconfig {
         Bundle 'editorconfig/editorconfig-vim'
     " }
+
+    " Powershell {
+        Bundle 'PProvost/vim-ps1'
+    " }"
 " }
 " 
 
