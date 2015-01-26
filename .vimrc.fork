@@ -35,6 +35,10 @@
         let g:syntastic_always_populate_loc_list=1
         let g:syntastic_json_checkers=['jsonlint']
     " }
+    "
+    " Autoclose {
+        UnBundle "spf13/vim-autoclose"
+    " }
 " }
 
 " Colorscheme {
@@ -57,7 +61,7 @@
         endif
     else
         if WINDOWS()
-            colorscheme peachpuff
+            colorscheme default
         endif
     endif
 " }
