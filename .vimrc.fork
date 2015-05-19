@@ -29,11 +29,10 @@
     " }
     " syntastic {
         "use jsxhint for js checking
-        let g:syntastic_javascript_checkers=['eslint']
+        let g:syntastic_javascript_checkers=['babel-eslint']
         let g:syntastic_check_on_wq=1 "run check when buffer is written to disk
         let g:syntastic_auto_loc_list=1   "auto open when error exists, close when errors are cleared
         let g:syntastic_always_populate_loc_list=1
-        let g:syntastic_json_checkers=['jsonlint']
     " }
     let g:jsx_ext_required = 0
 " }
@@ -63,10 +62,6 @@
     endif
 " }
 
-" KeyMapping {
-    " select all
-    nnoremap <C-a> ggVG
-    inoremap <C-a> <Esc>ggVG
 
     " toggle numberline
     nnoremap <F10> :set number!<cr>
