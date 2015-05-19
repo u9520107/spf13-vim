@@ -68,16 +68,8 @@
     nnoremap <C-a> ggVG
     inoremap <C-a> <Esc>ggVG
 
-    " jsBeautify
-    vnoremap <silent> <C-f> :call RangeJsBeautify()<cr>
-
     " toggle numberline
     nnoremap <F10> :set number!<cr>
 
-    "tern_for_vim
-    nnoremap <F12> :TernDef<CR>
-    inoremap <F12> <Esc>:TernDef<CR>i
-
-    noremap <F9> :IndentGuidesToggle<cr>
 " }
 

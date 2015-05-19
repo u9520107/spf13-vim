@@ -9,8 +9,6 @@
             Bundle 'digitaltoad/vim-jade'
             Bundle 'wavded/vim-stylus'
             Bundle 'mxw/vim-jsx'
-            Bundle 'marijnh/tern_for_vim'
-            Bundle 'maksimr/vim-jsbeautify'
         endif
     " }
     
