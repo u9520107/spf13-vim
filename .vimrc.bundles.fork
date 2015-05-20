@@ -26,6 +26,8 @@
     " Powershell {
         Bundle 'PProvost/vim-ps1'
     " }"
+    "
+        Bundle 'spf13/vim-autoclose'
 " }
 " 
 
