@@ -1,50 +1,54 @@
+# spf13-vim : Steve Francia's Vim Distribution
 
-# u9520107/spf13-vim : Fork of Steve Francia's Vim Distribution
+                    __ _ _____              _
+         ___ _ __  / _/ |___ /      __   __(_)_ __ ___
+        / __| '_ \| |_| | |_ \ _____\ \ / /| | '_ ` _ \
+        \__ \ |_) |  _| |___) |_____|\ V / | | | | | | |
+        |___/ .__/|_| |_|____/        \_/  |_|_| |_| |_|
+            |_|
 
+spf13-vim is a distribution of vim plugins and resources for Vim, Gvim and [MacVim].
 
-Changes:
-======
+It is a good starting point for anyone intending to use VIM for development running equally well on Windows, Linux, \*nix and Mac.
 
-1. Bundle Groups: general, neocomplcache, programming, javascript, html, misc
+The distribution is completely customisable using a `~/.vimrc.local`, `~/.vimrc.bundles.local`, and `~/.vimrc.before.local` Vim RC files.
 
-2. Indent Guides defaults to off
+![spf13-vim image][spf13-vim-img]
 
-3. Keep NERDTree open by default
+Unlike traditional VIM plugin structure, which similar to UNIX throws all files into common directories, making updating or disabling plugins a real mess, spf13-vim 3 uses the [Vundle] plugin management system to have a well organized vim directory (Similar to mac's app folders). Vundle also ensures that the latest versions of your plugins are installed and makes it easy to keep them up to date.
 
-4. Turn off spell check by default
+Great care has been taken to ensure that each plugin plays nicely with others, and optional configuration has been provided for what we believe is the most efficient use.
 
-Additions:
-=========
+Lastly (and perhaps, most importantly) It is completely cross platform. It works well on Windows, Linux and OSX without any modifications or additional configurations. If you are using [MacVim] or Gvim additional features are enabled. So regardless of your environment just clone and run.
 
-1. Editorconfig-vim support
+# Installation
 
-2. <C-a> mapping for select all
+## Linux, \*nix, Mac OSX Installation
 
-3. vim-jsbeautify mapped to <C-f> in visual mode with selected range
+The easiest way to install spf13-vim is to use our [automatic installer](https://j.mp/spf13-vim3) by simply copying and pasting the following line into a terminal. This will install spf13-vim and backup your existing vim configuration. If you are upgrading from a prior version (before 3.0) this is also the recommended installation.
 
-4. tern_for_vim support, tern#Def mapped to <F12>
+*Requires Git 1.7+ and Vim 7.3+*
 
-5. jsx support
+```bash
 
-6. stylus support
+    curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+```
 
-7. syntastic check on write, also uses jsxhint and jsonlint node packages for checking.
+If you have a bash-compatible shell you can run the script directly:
+```bash
 
+    sh <(curl https://j.mp/spf13-vim3 -L)
+```
 
-Node Dependencie:
-================
-
-1. vim-jsbeautify: find in ./spf13-vim-3/.vim/bundle/vim-jsbeautify, run npm install.
-
-
-2. tern_for_vim: find in ./spf13-vim-3/.vim/bundle/tern_for_vim, run npm install.
-
-3. jsxhint: run [sudo] npm install -g jsxhint
-
-4. jsonlint: run [sudo] npm install -g jsonlint
+## Installing on Windows
 
 On Windows and \*nix [Git] and [Curl] are required. Also, if you haven't done so already, you'll need to install [Vim].
 The quickest option to install all three dependencies ([Git], [Curl], [Vim] and [spf13-vim]) is via [Chocolatey] NuGet. After installing [Chocolatey], execute the following commands on the _command prompt_:
+
+    C:\> choco install spf13-vim
+
+_Note: The [spf13-vim package] will install Vim also!_
+
 If you want to install [msysgit], [Curl] and [spf13-vim] individually, follow the directions below.
 
 ### Installing dependencies
@@ -545,4 +549,3 @@ Here's some tips if you've never used VIM before:
 [phpmanual-img]:https://i.imgur.com/c0GGP.png
 [easymotion-img]:https://i.imgur.com/ZsrVL.png
 [airline-img]:https://i.imgur.com/D4ZYADr.png
->>>>>>> upstream/3.0
