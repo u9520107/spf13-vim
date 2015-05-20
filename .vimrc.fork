@@ -1,0 +1,70 @@
+" Modeline and Notes {
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=2 foldmethod=marker spell:
+" }
+
+" Formatting {
+
+    set shiftwidth=2                " Use indents of 2 spaces
+    set tabstop=2                   " An indentation every 2 columns
+    set softtabstop=2               " Let backspace delete indent
+" }
+" Code folding {
+    set foldmethod=marker
+" }
+
+" Plugins {
+    " NerdTree {
+        let NERDTreeShowBookmarks=0
+        let NERDTreeQuitOnOpen=0
+        let NERDTreeShowHidden=0
+        let NERDTreeKeepTreeInNewTab=1
+        let g:nerdtree_tabs_open_on_gui_startup=1
+        let g:nerdtree_tabs_open_on_console_startup=1
+    " }
+    
+    " indent_guides {
+        if isdirectory(expand("~/.vim/bundle/vim-indent-guides/"))
+            let g:indent_guides_enable_on_vim_startup = 0
+        endif
+    " }
+    " syntastic {
+        "use jsxhint for js checking
+        let g:syntastic_javascript_checkers=['eslint']
+        let g:syntastic_check_on_wq=1 "run check when buffer is written to disk
+        let g:syntastic_auto_loc_list=1   "auto open when error exists, close when errors are cleared
+        let g:syntastic_always_populate_loc_list=1
+    " }
+    let g:jsx_ext_required = 0
+" }
+
+" Colorscheme {
+    "colorscheme distinguished
+" }
+
+" SpellCheck {
+    set nospell
+" }"
+
+" GUI Settings {
+    " GVIM- (here instead of .gvimrc)
+    if has('gui_running')
+        if !exists("g:spf13_no_big_font")
+            if WINDOWS() && has("gui_running")
+                set guifont=Consolas:h10,Andale_Mono:h10,Menlo:h10,Courier_New:h10
+                let g:NERDTreeDirArrows=1
+                set guioptions=
+            endif
+        endif
+    else
+        if WINDOWS()
+            colorscheme visualstudio
+        endif
+    endif
+" }
+
+
+    " toggle numberline
+    nnoremap <F10> :set number!<cr>
+
+" }
+
