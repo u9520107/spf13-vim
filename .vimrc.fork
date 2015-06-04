@@ -65,6 +65,7 @@
 
     " toggle numberline
     nnoremap <F10> :set number!<cr>
+    nnoremap <F9> :IndentGuidesToggle<cr>
 
 " }
 

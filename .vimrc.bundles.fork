@@ -4,6 +4,8 @@
 
 " Bundles {
 
+    UnBundle 'jiangmiao/auto-pairs'
+
     " Javascript {
         if count(g:spf13_bundle_groups, 'javascript')
             Bundle 'digitaltoad/vim-jade'
