@@ -119,7 +119,6 @@
                 Bundle 'Lokaltog/vim-powerline'
             else
                 Bundle 'vim-airline/vim-airline'
-                Bundle 'vim-airline/vim-airline-themes'
             endif
             Bundle 'powerline/fonts'
             Bundle 'bling/vim-bufferline'

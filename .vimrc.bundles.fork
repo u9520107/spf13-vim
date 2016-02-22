@@ -20,6 +20,10 @@
             Bundle 'mattn/emmet-vim'
         endif
     " }
+    
+    " airline-themes {
+        Bundle 'vim-airline/vim-airline-themes'
+    " }
 
     " Editorconfig {
         Bundle 'editorconfig/editorconfig-vim'

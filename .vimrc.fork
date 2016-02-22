@@ -4,9 +4,9 @@
 
 " Formatting {
 
-    set shiftwidth=2                " Use indents of 2 spaces
-    set tabstop=2                   " An indentation every 2 columns
-    set softtabstop=2               " Let backspace delete indent
+    "set shiftwidth=2                " Use indents of 2 spaces
+    "set tabstop=2                   " An indentation every 2 columns
+    "set softtabstop=2               " Let backspace delete indent
 " }
 " Code folding {
     set foldmethod=marker
